@@ -15,8 +15,9 @@ ls -la
 sleep 5s
 cd judge0-v1.13.0
 
+echo "Step 2: Download and extract the Judge0 release archive"
 # Step 3: Run all services and wait for initialization
-# docker-compose up -d db redis
+docker-compose up -d db redis
 # sleep 10s
 # docker-compose up -d
 # sleep 5s
