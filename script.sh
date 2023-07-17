@@ -19,7 +19,7 @@ echo "Step 2: Download and extract the Judge0 release archive"
 
 ls -la
 # Step 3: Run all services and wait for initialization
-docker compose up -d db redis
+docker compose up db redis
 sleep 10s
-docker compose up -d
+docker compose up
 sleep 5s
