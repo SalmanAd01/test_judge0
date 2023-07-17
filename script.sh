@@ -16,7 +16,7 @@ sleep 5s
 cd judge0-v1.13.0
 
 # Step 3: Run all services and wait for initialization
-docker-compose up -d db redis
-sleep 10s
-docker-compose up -d
-sleep 5s
+# docker-compose up -d db redis
+# sleep 10s
+# docker-compose up -d
+# sleep 5s

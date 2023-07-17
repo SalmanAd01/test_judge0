@@ -1,7 +1,10 @@
 FROM ubuntu:latest
 
-# Install wget and unzip
-RUN apt-get update && apt-get install -y wget unzip
+# Install apt-utils
+RUN apt-get update && apt-get install -y --no-install-recommends apt-utils
+
+# Install wget, unzip, and other necessary packages
+RUN apt-get install -y wget unzip
 
 # Copy the shell script to the container
 COPY script.sh /script.sh
