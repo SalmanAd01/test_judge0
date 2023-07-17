@@ -12,5 +12,7 @@ COPY script.sh /script.sh
 # Set the script as executable
 RUN chmod +x /script.sh
 
+WORKDIR /
+
 # Run the shell script when the container starts
-CMD ["/script.sh"]
+CMD ["./script.sh"]
