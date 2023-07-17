@@ -18,6 +18,9 @@ RUN wget https://github.com/judge0/judge0/releases/download/v1.13.0/judge0-v1.13
 # Navigate to the extracted directory
 WORKDIR /judge0-v1.13.0
 
+# Mount the Docker socket as a volume
+VOLUME /var/run/docker.sock
+
 # Run all services and wait for initialization
 RUN docker-compose up -d db redis && \
     sleep 10 && \
